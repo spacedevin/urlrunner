@@ -1,6 +1,10 @@
-This agent will listen for urlrunner events. It accepts file urls like this:
+urlrunner is a simple tool for OSX to allow local linking to files through a browser.
+To open a file, hold shift and click a link.
+Otherwise it will open Finder and select it.
+
+It accepts file urls like this:
 
 	urlrunner:///Volumes/
 	urlrunner:///Users/arzynik/Desktop/dw.txt
 
-Hold shift to open the file. Otherwise it will open Finder and select it.
+Created by Devin Smith for Luma Pictures (lumapictures.com).
