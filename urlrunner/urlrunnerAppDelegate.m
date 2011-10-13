@@ -2,17 +2,14 @@
 
 @implementation urlrunnerAppDelegate
 
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // register the event handler
-    NSLog(@"%@", @"launcher");
+- init {
+    // register the event
     [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(handleURLEvent:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
+    return self;
 }
 
 - (void)handleURLEvent:(NSAppleEventDescriptor*)event withReplyEvent:(NSAppleEventDescriptor*)replyEvent
 {
-    NSLog(@"%@", @"handler");
     NSString* url = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
     NSUInteger flags = [NSEvent modifierFlags] & NSDeviceIndependentModifierFlagsMask;
 
@@ -21,7 +18,7 @@
     url = [url stringByReplacingOccurrencesOfString:@"file//" withString:@""];
     
     // lets log it
-    NSLog(@"%@", url);
+    // NSLog(@"%@", url);
 
     // open the file if you are holding shift
     if( flags & NSShiftKeyMask ){
@@ -31,6 +28,8 @@
     } else {
         [[NSWorkspace sharedWorkspace] selectFile:url inFileViewerRootedAtPath:url];
     }
+    
+    [NSApp terminate:nil];
 }
 
 @end
