@@ -56,7 +56,7 @@
 						<object class="NSTextField" id="90815987">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{28, 60}, {423, 40}}</string>
+							<string key="NSFrame">{{27, 62}, {423, 48}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="377163777"/>
@@ -66,7 +66,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="783181733">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">272891904</int>
-								<string key="NSContents">urlrunner is a simple tool allow custom handling of urls. this allows you to control which programs open what while in a web browser.</string>
+								<string key="NSContents">urlrunner is a simple tool for OSX to allow local linking to files through a browser. To open a file, hold shift and click a link. Otherwise it will open Finder and select it. ex: urlrunner:///Volumes/</string>
 								<object class="NSFont" key="NSSupport" id="198861387">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">12</double>
@@ -97,7 +97,7 @@
 						<object class="NSTextField" id="377163777">
 							<reference key="NSNextResponder" ref="1006"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{29, 9}, {423, 40}}</string>
+							<string key="NSFrame">{{27, 5}, {423, 40}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
@@ -130,7 +130,7 @@
 									<string>NeXT TIFF v4.0 pasteboard type</string>
 								</object>
 							</object>
-							<string key="NSFrame">{{142, 120}, {194, 133}}</string>
+							<string key="NSFrame">{{142, 128}, {194, 133}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="90815987"/>
