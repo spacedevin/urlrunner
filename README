@@ -1,6 +1,6 @@
-This agent will listen for __urlrunner__ events. It accepts file urls like this:
+This agent will listen for urlrunner events. It accepts file urls like this:
 
 	urlrunner:///Volumes/
 	urlrunner:///Users/arzynik/Desktop/dw.txt
 
-__Hold shift__ to open the file. Otherwise it will open Finder and select it.
+Hold shift to open the file. Otherwise it will open Finder and select it.
