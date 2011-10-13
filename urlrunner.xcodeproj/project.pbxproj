@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08A4BDB514479D0900F9EFCE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A4BDB414479D0900F9EFCE /* MainWindow.xib */; };
 		08ED369F14464ECB00B4FEE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08ED369E14464ECB00B4FEE5 /* Cocoa.framework */; };
 		08ED36A914464ECB00B4FEE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08ED36A714464ECB00B4FEE5 /* InfoPlist.strings */; };
 		08ED36AB14464ECB00B4FEE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ED36AA14464ECB00B4FEE5 /* main.m */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08A4BDB414479D0900F9EFCE /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		08ED369A14464ECB00B4FEE5 /* urlrunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = urlrunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08ED369E14464ECB00B4FEE5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		08ED36A114464ECB00B4FEE5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -101,6 +103,7 @@
 				08ED36B114464ECB00B4FEE5 /* urlrunnerAppDelegate.m */,
 				08ED36B314464ECC00B4FEE5 /* MainMenu.xib */,
 				08ED36A514464ECB00B4FEE5 /* Supporting Files */,
+				08A4BDB414479D0900F9EFCE /* MainWindow.xib */,
 			);
 			path = urlrunner;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				08ED36DA1446765200B4FEE5 /* logo_256.png in Resources */,
 				08ED36DB1446765200B4FEE5 /* logo_32.png in Resources */,
 				08ED36DC1446765200B4FEE5 /* logo_512.png in Resources */,
+				08A4BDB514479D0900F9EFCE /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

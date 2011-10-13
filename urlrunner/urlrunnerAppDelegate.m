@@ -8,6 +8,15 @@
     return self;
 }
 
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+    // display the window. this should only open if we didnt get a handleURLEvent
+    if([NSBundle loadNibNamed:@"MainWindow" owner:self]);
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
+    return true;
+}
+
 - (void)handleURLEvent:(NSAppleEventDescriptor*)event withReplyEvent:(NSAppleEventDescriptor*)replyEvent
 {
     NSString* url = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
