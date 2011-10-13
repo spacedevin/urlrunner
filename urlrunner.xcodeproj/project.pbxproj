@@ -10,9 +10,9 @@
 		08ED369F14464ECB00B4FEE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08ED369E14464ECB00B4FEE5 /* Cocoa.framework */; };
 		08ED36A914464ECB00B4FEE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08ED36A714464ECB00B4FEE5 /* InfoPlist.strings */; };
 		08ED36AB14464ECB00B4FEE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ED36AA14464ECB00B4FEE5 /* main.m */; };
-		08ED36AF14464ECB00B4FEE5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 08ED36AD14464ECB00B4FEE5 /* Credits.rtf */; };
 		08ED36B214464ECB00B4FEE5 /* urlrunnerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ED36B114464ECB00B4FEE5 /* urlrunnerAppDelegate.m */; };
 		08ED36B514464ECC00B4FEE5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08ED36B314464ECC00B4FEE5 /* MainMenu.xib */; };
+		08ED36C514466C3300B4FEE5 /* logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 08ED36C414466C3300B4FEE5 /* logo.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +21,14 @@
 		08ED36A114464ECB00B4FEE5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		08ED36A214464ECB00B4FEE5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		08ED36A314464ECB00B4FEE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		08ED36A614464ECB00B4FEE5 /* urlrunner-Info.plist */ = {isa = PBXFileReference; path = "urlrunner-Info.plist"; sourceTree = "<group>"; };
+		08ED36A614464ECB00B4FEE5 /* urlrunner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "urlrunner-Info.plist"; sourceTree = "<group>"; };
 		08ED36A814464ECB00B4FEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08ED36AA14464ECB00B4FEE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		08ED36AC14464ECB00B4FEE5 /* urlrunner-Prefix.pch */ = {isa = PBXFileReference; path = "urlrunner-Prefix.pch"; sourceTree = "<group>"; };
-		08ED36AE14464ECB00B4FEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		08ED36B014464ECB00B4FEE5 /* urlrunnerAppDelegate.h */ = {isa = PBXFileReference; path = urlrunnerAppDelegate.h; sourceTree = "<group>"; };
+		08ED36AC14464ECB00B4FEE5 /* urlrunner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "urlrunner-Prefix.pch"; sourceTree = "<group>"; };
+		08ED36B014464ECB00B4FEE5 /* urlrunnerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = urlrunnerAppDelegate.h; sourceTree = "<group>"; };
 		08ED36B114464ECB00B4FEE5 /* urlrunnerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = urlrunnerAppDelegate.m; sourceTree = "<group>"; };
 		08ED36B414464ECC00B4FEE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		08ED36C414466C3300B4FEE5 /* logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = logo.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +46,7 @@
 		08ED368F14464ECB00B4FEE5 = {
 			isa = PBXGroup;
 			children = (
+				08ED36C414466C3300B4FEE5 /* logo.icns */,
 				08ED36A414464ECB00B4FEE5 /* urlrunner */,
 				08ED369D14464ECB00B4FEE5 /* Frameworks */,
 				08ED369B14464ECB00B4FEE5 /* Products */,
@@ -97,7 +98,6 @@
 				08ED36A714464ECB00B4FEE5 /* InfoPlist.strings */,
 				08ED36AA14464ECB00B4FEE5 /* main.m */,
 				08ED36AC14464ECB00B4FEE5 /* urlrunner-Prefix.pch */,
-				08ED36AD14464ECB00B4FEE5 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,6 +127,9 @@
 /* Begin PBXProject section */
 		08ED369114464ECB00B4FEE5 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 08ED369414464ECB00B4FEE5 /* Build configuration list for PBXProject "urlrunner" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -150,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				08ED36A914464ECB00B4FEE5 /* InfoPlist.strings in Resources */,
-				08ED36AF14464ECB00B4FEE5 /* Credits.rtf in Resources */,
 				08ED36B514464ECC00B4FEE5 /* MainMenu.xib in Resources */,
+				08ED36C514466C3300B4FEE5 /* logo.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,14 +181,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		08ED36AD14464ECB00B4FEE5 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08ED36AE14464ECB00B4FEE5 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
 		08ED36B314464ECC00B4FEE5 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -201,7 +196,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -228,7 +223,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -250,7 +245,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "urlrunner/urlrunner-Prefix.pch";
 				INFOPLIST_FILE = "urlrunner/urlrunner-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -261,7 +258,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "urlrunner/urlrunner-Prefix.pch";
 				INFOPLIST_FILE = "urlrunner/urlrunner-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -285,6 +284,7 @@
 				08ED36BA14464ECC00B4FEE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
