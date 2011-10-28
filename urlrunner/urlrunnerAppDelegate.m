@@ -22,9 +22,10 @@
     NSString* url = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
     NSUInteger flags = [NSEvent modifierFlags] & NSDeviceIndependentModifierFlagsMask;
 
-    // some string cleanup
+    // some string cleanup...without regex
     url = [url stringByReplacingOccurrencesOfString:@"urlrunner://" withString:@""];
     url = [url stringByReplacingOccurrencesOfString:@"file//" withString:@""];
+    url = [url stringByReplacingOccurrencesOfString:@"file://" withString:@""];
     
     // lets log it
     // NSLog(@"%@", url);
